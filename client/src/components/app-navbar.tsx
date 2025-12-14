@@ -16,8 +16,8 @@ import {
   Shield,
   ChevronDown,
 } from "lucide-react";
-import logoImage from "@assets/WhatsApp_Image_2025-11-21_at_20.00.27_83f196f8_1765299453609.jpg";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -90,11 +90,9 @@ export function AppNavbar() {
       <div className="flex items-center justify-between h-full px-4 gap-4">
         <div className="flex items-center gap-4 min-w-0 flex-1">
           <Link href="/pos" className="flex items-center gap-2 shrink-0">
-            <img 
-              src={logoImage} 
-              alt="Desi Beats Café" 
-              className="w-10 h-10 rounded-full object-cover border-2 border-amber-200/50"
-            />
+            <div className="w-10 h-10 rounded-full bg-amber-800 border-2 border-amber-200/50 flex items-center justify-center">
+              <Coffee className="w-5 h-5 text-amber-200" />
+            </div>
             <div className="hidden sm:flex flex-col">
               <span className="font-semibold text-sm leading-tight text-white" data-testid="text-navbar-title">
                 Desi Beats

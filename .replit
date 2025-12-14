@@ -1,0 +1,50 @@
+modules = ["nodejs-20", "web"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+
+[userenv]
+
+[userenv.shared]
+MONGO_URI = "mongodb+srv://Truepathtemp:Truepathtemp@rightpath.kdovr8j.mongodb.net/newdesiposnenen?retryWrites=true&w=majority"
+JWT_SECRET = "f182afd385e24c55786862148c54f874"
+IMAGEKIT_PRIVATE_KEY = "private_ch8QWVR/stsW8hyoYf5VDq0qS3w="
+IMAGEKIT_PUBLIC_KEY = "public_qYHxf8o7CeTJ/YeIe0m1MbUnnTI="
+IMAGEKIT_URL_ENDPOINT = "https://ik.imagekit.io/euowpovamk/pos/"
+VITE_IMAGEKIT_PUBLIC_KEY = "public_qYHxf8o7CeTJ/YeIe0m1MbUnnTI="
+VITE_IMAGEKIT_URL_ENDPOINT = "https://ik.imagekit.io/euowpovamk/pos/"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "dev server"
+
+[[workflows.workflow]]
+name = "dev server"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[deployment]
+deploymentTarget = "autoscale"
+run = ["npm", "run", "start"]
+build = ["npm", "run", "build"]

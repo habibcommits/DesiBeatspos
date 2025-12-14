@@ -1,0 +1,158 @@
+06:20:55.645 Running build in Washington, D.C., USA (East) – iad1
+06:20:55.648 Build machine configuration: 2 cores, 8 GB
+06:20:56.012 Cloning github.com/habibcommits/DesiBeatspos (Branch: main, Commit: 5d7eb54)
+06:20:56.013 Previous build caches not available.
+06:20:56.484 Cloning completed: 472.000ms
+06:20:57.577 Running "vercel build"
+06:20:59.401 Vercel CLI 50.0.1
+06:21:00.272 Running "install" command: `npm install`...
+06:21:07.806 npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+06:21:07.855 npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+06:21:14.781 
+06:21:14.782 added 559 packages, and audited 560 packages in 14s
+06:21:14.783 
+06:21:14.783 67 packages are looking for funding
+06:21:14.783   run `npm fund` for details
+06:21:14.822 
+06:21:14.823 11 vulnerabilities (3 low, 5 moderate, 3 high)
+06:21:14.823 
+06:21:14.823 To address issues that do not require attention, run:
+06:21:14.823   npm audit fix
+06:21:14.823 
+06:21:14.823 To address all issues possible (including breaking changes), run:
+06:21:14.823   npm audit fix --force
+06:21:14.823 
+06:21:14.823 Some issues need review, and may require choosing
+06:21:14.823 a different dependency.
+06:21:14.823 
+06:21:14.823 Run `npm audit` for details.
+06:21:15.128 
+06:21:15.132 > rest-express@1.0.0 build
+06:21:15.132 > tsx script/build.ts
+06:21:15.132 
+06:21:16.304 building client...
+06:21:16.403 [36mvite v5.4.20 [32mbuilding for production...[36m[39m
+06:21:16.638 transforming...
+06:21:18.032 
+06:21:18.032 A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+06:21:18.298 [32m✓[39m 36 modules transformed.
+06:21:18.672 [31mx[39m Build failed in 2.07s
+06:21:18.674 [31m[vite:load-fallback] Could not load /vercel/path0/client/src/pages/login (imported by client/src/App.tsx): ENOENT: no such file or directory, open '/vercel/path0/client/src/pages/login'[39m
+06:21:18.677     at async open (node:internal/fs/promises:642:25)
+06:21:18.678     at async Object.readFile (node:internal/fs/promises:1279:14)
+06:21:18.678     at async Object.load (/vercel/path0/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:65356:25)
+06:21:18.678     at async PluginDriver.hookFirstAndGetPlugin (/vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:20689:28)
+06:21:18.679     at async <anonymous> (/vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:19809:33)
+06:21:18.679     at async Queue.work (/vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:20899:32) {
+06:21:18.679   errno: -2,
+06:21:18.679   code: 'PLUGIN_ERROR',
+06:21:18.679   syscall: 'open',
+06:21:18.680   path: '/vercel/path0/client/src/pages/login',
+06:21:18.680   pluginCode: 'ENOENT',
+06:21:18.680   plugin: 'vite:load-fallback',
+06:21:18.680   hook: 'load',
+06:21:18.680   watchFiles: [
+06:21:18.680     '/vercel/path0/client/index.html',
+06:21:18.680     '/vercel/path0/client/src/main.tsx',
+06:21:18.680     '/vercel/path0/package.json',
+06:21:18.680     '/vercel/path0/node_modules/react/jsx-runtime.js',
+06:21:18.680     '/vercel/path0/node_modules/react-dom/client.js',
+06:21:18.680     '/vercel/path0/client/src/App.tsx',
+06:21:18.680     '/vercel/path0/client/src/index.css',
+06:21:18.680     '/vercel/path0/client/src/hooks/use-toast.ts',
+06:21:18.680     '/vercel/path0/client/src/lib/print-utils.ts',
+06:21:18.681     '/vercel/path0/client/src/lib/queryClient.ts',
+06:21:18.681     '/vercel/path0/client/src/lib/utils.ts',
+06:21:18.681     '/vercel/path0/client/src/components/app-navbar.tsx',
+06:21:18.681     '/vercel/path0/client/src/components/app-sidebar.tsx',
+06:21:18.681     '/vercel/path0/client/src/components/theme-toggle.tsx',
+06:21:18.681     '/vercel/path0/client/src/hooks/use-mobile.tsx',
+06:21:18.681     '/vercel/path0/client/src/lib/auth-context.tsx',
+06:21:18.681     '/vercel/path0/client/src/lib/cart-context.tsx',
+06:21:18.681     '/vercel/path0/client/src/lib/theme-context.tsx',
+06:21:18.681     '/vercel/path0/client/src/pages/dashboard.tsx',
+06:21:18.681     '/vercel/path0/client/src/components/pos/cart-sidebar.tsx',
+06:21:18.681     '/vercel/path0/client/src/components/pos/category-tabs.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/pos/payment-modal.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/pos/product-grid.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/pos/table-select-dialog.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/ui/accordion.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/ui/alert-dialog.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/ui/alert.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/ui/aspect-ratio.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/ui/avatar.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/ui/badge.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/ui/breadcrumb.tsx',
+06:21:18.682     '/vercel/path0/client/src/components/ui/button.tsx',
+06:21:18.683     '/vercel/path0/client/src/components/ui/calendar.tsx',
+06:21:18.683     '/vercel/path0/client/src/components/ui/card.tsx',
+06:21:18.683     '/vercel/path0/client/src/components/ui/carousel.tsx',
+06:21:18.683     '/vercel/path0/client/src/components/ui/chart.tsx',
+06:21:18.683     '/vercel/path0/client/src/components/ui/checkbox.tsx',
+06:21:18.684     '/vercel/path0/client/src/components/ui/collapsible.tsx',
+06:21:18.684     '/vercel/path0/client/src/components/ui/command.tsx',
+06:21:18.684     '/vercel/path0/client/src/components/ui/context-menu.tsx',
+06:21:18.684     '/vercel/path0/client/src/components/ui/dialog.tsx',
+06:21:18.685     '/vercel/path0/client/src/components/ui/drawer.tsx',
+06:21:18.685     '/vercel/path0/client/src/components/ui/dropdown-menu.tsx',
+06:21:18.686     '/vercel/path0/client/src/components/ui/form.tsx',
+06:21:18.686     '/vercel/path0/client/src/components/ui/hover-card.tsx',
+06:21:18.686     '/vercel/path0/client/src/components/ui/input-otp.tsx',
+06:21:18.686     '/vercel/path0/client/src/components/ui/input.tsx',
+06:21:18.686     '/vercel/path0/client/src/components/ui/label.tsx',
+06:21:18.687     '/vercel/path0/client/src/components/ui/menubar.tsx',
+06:21:18.687     '/vercel/path0/client/src/components/ui/navigation-menu.tsx',
+06:21:18.687     '/vercel/path0/client/src/components/ui/pagination.tsx',
+06:21:18.687     '/vercel/path0/client/src/components/ui/popover.tsx',
+06:21:18.687     '/vercel/path0/client/src/components/ui/progress.tsx',
+06:21:18.688     '/vercel/path0/client/src/components/ui/radio-group.tsx',
+06:21:18.688     '/vercel/path0/client/src/components/ui/resizable.tsx',
+06:21:18.688     '/vercel/path0/client/src/components/ui/scroll-area.tsx',
+06:21:18.688     '/vercel/path0/client/src/components/ui/select.tsx',
+06:21:18.688     '/vercel/path0/client/src/components/ui/separator.tsx',
+06:21:18.689     '/vercel/path0/client/src/components/ui/sheet.tsx',
+06:21:18.689     '/vercel/path0/client/src/components/ui/sidebar.tsx',
+06:21:18.689     '/vercel/path0/client/src/components/ui/skeleton.tsx',
+06:21:18.689     '/vercel/path0/client/src/components/ui/slider.tsx',
+06:21:18.689     '/vercel/path0/client/src/components/ui/switch.tsx',
+06:21:18.689     '/vercel/path0/client/src/components/ui/table.tsx',
+06:21:18.690     '/vercel/path0/client/src/components/ui/tabs.tsx',
+06:21:18.690     '/vercel/path0/client/src/components/ui/textarea.tsx',
+06:21:18.690     '/vercel/path0/client/src/components/ui/toast.tsx',
+06:21:18.690     '/vercel/path0/client/src/components/ui/toaster.tsx',
+06:21:18.691     '/vercel/path0/client/src/components/ui/toggle-group.tsx',
+06:21:18.691     '/vercel/path0/client/src/components/ui/toggle.tsx',
+06:21:18.691     '/vercel/path0/client/src/components/ui/tooltip.tsx',
+06:21:18.691     '/vercel/path0/client/src/pages/admin/categories.tsx',
+06:21:18.691     '/vercel/path0/client/src/pages/admin/products.tsx',
+06:21:18.691     '/vercel/path0/client/src/pages/admin/reports.tsx',
+06:21:18.692     '/vercel/path0/client/src/pages/admin/settings.tsx',
+06:21:18.692     '/vercel/path0/client/src/pages/admin/tables.tsx',
+06:21:18.692     '/vercel/path0/client/src/pages/admin/users.tsx',
+06:21:18.692     '/vercel/path0/tailwind.config.ts',
+06:21:18.692     '/vercel/path0/node_modules/react/cjs/react-jsx-runtime.production.min.js',
+06:21:18.692     '/vercel/path0/node_modules/react-dom/index.js',
+06:21:18.692     '/vercel/path0/node_modules/wouter/esm/index.js',
+06:21:18.693     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/index.js',
+06:21:18.693     '/vercel/path0/node_modules/react/index.js',
+06:21:18.693     '/vercel/path0/node_modules/wouter/esm/use-browser-location.js',
+06:21:18.693     '/vercel/path0/node_modules/wouter/esm/react-deps.js',
+06:21:18.693     '/vercel/path0/node_modules/regexparam/dist/index.mjs',
+06:21:18.694     '/vercel/path0/node_modules/@tanstack/query-core/build/modern/index.js',
+06:21:18.694     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/types.js',
+06:21:18.694     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/useQueries.js',
+06:21:18.694     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/useQuery.js',
+06:21:18.694     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.js',
+06:21:18.694     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.js',
+06:21:18.695     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.js',
+06:21:18.695     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.js',
+06:21:18.695     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.js',
+06:21:18.695     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/queryOptions.js',
+06:21:18.695     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/infiniteQueryOptions.js',
+06:21:18.695     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js',
+06:21:18.695     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/HydrationBoundary.js',
+06:21:18.696     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js',
+06:21:18.696     ... 2 more items
+06:21:18.696   ]
+06:21:18.696 }
+06:21:18.737 Error: Command "npm run build" exited with 1
